@@ -16,19 +16,19 @@ public class _5Question {
         // create a variable to represent the number given
         int number = 15;
         // create a one-dimensional array that will hold the amount of numbers given in 'number'
-        int [] arr = new int[number];
+        int [] fib = new int[number];
 
         // set the positions 0th and 1st to be 0 and 1 since they never change
-        arr[0] = 0;
-        arr[1] = 1;
+        fib[0] = 0;
+        fib[1] = 1;
 
         // create a loop that will add the first two numbers to create the third number.. so on
-        for(int i = 2; i < arr.length; i++) {
-            arr[i] = arr[i - 1] + arr[i - 2];
+        for(int i = 2; i < fib.length; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2];
         }
 
-        for(int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+        for(int i = 0; i < fib.length; i++) {
+            System.out.print(fib[i] + " ");
         }
     }
 }
